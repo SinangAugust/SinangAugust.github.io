@@ -2,11 +2,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="assets/img/Logo1.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/Home/TextRotate.js"></script>
+    <script src="assets/js/Email/ContactMe.js"></script>
 
     <title>Hey, It's August!</title>
 </head>
@@ -46,7 +51,13 @@
                     </div>
 
                     <h1 class="home__title">John Augustine Sinang</h1>
-                    <span class="home__profession">Computer Engineer</span>
+                    <!--<span class="home__profession">Computer Engineer</span>-->
+                    <span>
+                        This person is a
+                        <span class="txt-rotate home__profession"
+                              data-period="2000"
+                              data-rotate='[ "Computer Engineer.", "Full Stack Web Developer." ]'></span>
+                    </span>
 
                     <div class="home__social">
                         <a href="https://www.linkedin.com/in/sinangaugust/" target="blank" class="home__social-link"><i class='bx bxl-linkedin'></i></a>
@@ -465,6 +476,5 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
